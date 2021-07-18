@@ -1,4 +1,4 @@
-## El problema con React básico
+# El problema con React básico
 
 - `React`  esta enfocado en la vista (`view`) de nuestra aplicación.
 - `React` no tiene enfoque en el modelo (`model`) y el controlador (`controller`) de nuestra aplicación. 
@@ -205,7 +205,7 @@ En el documento `index.html` creado en el paso `8` realizamos las siguientes mod
 </html>
 ```
 
-# Instalando `babel`  en modo `dev`
+## Instalando `babel`  en modo `dev`
 
 Antes de instalar `babel` vamos a excluir la carpeta `node_modules` de nuestro control de versiones. Para esto modificaremos nuestro archivo `.gitignore` agregándole la linea `node_modules/`.
 
@@ -272,6 +272,64 @@ Confirmamos nuestros cambios y los subimos a `github`
 git add .
 git commit -m "Add babel config and packages"
 git pull origin main
-git push or
+git push origin main
+```
+
+# Creando nuestra primera aplicación 
+
+Crearemos los archivos siguientes:
+
+```bash
+touch src/index.js
+touch src/App.js
+touch src/App.css
+```
+
+Dentro de `App.js` agregaremos el siguiente código:
+
+```js
+import React from 'react';
+import ',/App.css';
+
+const App = () => {
+    <div className="App">
+        <h1>Hello, world!</h1>
+    </div>
+}
+
+export default App;
+```
+
+Dentro de `App.css` agregamos el siguiente código:
+
+``` css
+.App {
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;       
+}
+```
+
+Dentro de `index.js` agregamos el siguiente código:
+
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.js';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+Instalar los paquetes `react` y `react-dom`
+
+```bash
+npm install react react-dom
+```
+
+```bash
+git add .
+git commit -m "Add react and react-dom c packages"
+git pull origin main
+git push origin main
 ```
 
