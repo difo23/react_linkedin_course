@@ -1,0 +1,19 @@
+{
+  "name": "react_topics",
+  "version": "1.0.0",
+  "description": "React topics in linkedin course 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "ecosystem",
+    "project",
+    "redux",
+    "reselect",
+    "style"
+  ],
+  "author": "Lizandro Jose Ramirez Difo",
+  "license": "MIT"
+}
